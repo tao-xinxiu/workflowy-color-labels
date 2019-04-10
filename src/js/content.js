@@ -95,6 +95,20 @@ function colorizeTree($root) {
 	});
 }
 
+function uncolorizeTree($root) {
+    jQuery(".content", $root).each(function(i) {
+        $elm = jQuery(this);
+        if ($elm.hasClass(marker)) {
+            $elm.css({ 'color': '', 'background-color': '' }).removeClass(marker);
+        }
+    });
+}
+
+// clear color when tag removed
+document.addEventListener("click", function() {
+    uncolorizeTree(jQuery(document));
+    colorizeTree(jQuery(document));
+});
 
 /**
  * Binds the dom updates to a time delayed function

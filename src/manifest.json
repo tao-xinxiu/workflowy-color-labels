@@ -1,7 +1,7 @@
 {
   "name": "WorkFlowy colorful tags",
   "short_name" : "wflowyColor",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "manifest_version": 2,
   "description": "Allows to assign color to tags in Workflowy",
   "homepage_url": "http://github.com/chronakis",
