@@ -105,7 +105,7 @@ function uncolorizeTree($root) {
 }
 
 // clear color when tag removed
-document.addEventListener("click", function() {
+document.addEventListener("DOMNodeInserted", function() {
     uncolorizeTree(jQuery(document));
     colorizeTree(jQuery(document));
 });
